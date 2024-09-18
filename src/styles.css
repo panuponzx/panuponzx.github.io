@@ -1,0 +1,65 @@
+body {
+  font-family:  Arial, sans-serif;
+  background-color: #000;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home-container, .projects-container, .contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+header, main, footer {
+  background-color: #000; /* สีพื้นหลังดำ */
+  color: #fff; /* สีข้อความขาว */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff; /* สีลิงก์ขาว */
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+

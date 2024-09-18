@@ -1,0 +1,52 @@
+.projects-container {
+  padding: 40px 20px; /* Padding for spacing */
+  background-color: #f9f9f9; /* Light background color */
+  text-align: center; /* Center align text */
+}
+
+.projects-container h2 {
+  font-size: 28px; /* Font size for the title */
+  color: #333; /* Dark text color */
+  margin-bottom: 30px; /* Space below the title */
+}
+
+.project-list {
+  display: flex; /* Flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between project cards */
+}
+
+.project-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  overflow: hidden; /* Clip overflow for rounded corners */
+  width: 300px; /* Fixed width for cards */
+  text-align: left; /* Left align text */
+  padding: 20px; /* Padding inside cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.project-card img {
+  width: 100%; /* Full width images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.project-card h3 {
+  font-size: 20px; /* Font size for project name */
+  color: #333; /* Dark text color */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.project-card p {
+  color: #666; /* Gray text color for description */
+  font-size: 14px; /* Font size for description */
+  line-height: 1.5; /* Line height for readability */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+}
