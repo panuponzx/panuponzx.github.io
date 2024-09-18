@@ -1,68 +1,65 @@
 header {
-  padding: 20px 20px; /* Padding for spacing */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
-  position: fixed; /* Fixed position for sticky effect */
-  width: 100%; /* Full width */
-  top: 0; /* Align at the top */
-  z-index: 1000; /* Ensure it's above other content */
+  padding: 20px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 header.scrolled {
-  background-color: #ffffff; /* Change background color on scroll */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 nav {
-  max-width: 1200px; /* Centering and limiting width */
-  margin: 0 auto; /* Center horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 ul {
-  list-style: none; /* Remove bullet points */
-  display: flex; /* Flexbox for horizontal layout */
-  justify-content: center; /* Center items horizontally */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  margin: 0 15px; /* Space between menu items */
+  margin: 0 15px;
 }
 
 a {
-  text-decoration: none; /* Remove underline */
-  color: #333; /* Dark text color */
-  font-size: 16px; /* Font size */
-  font-weight: 500; /* Slightly bold text */
-  position: relative; /* For pseudo-element positioning */
-  transition: color 0.3s ease; /* Smooth color transition */
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 a::after {
-  content: ''; /* Empty content for underline effect */
-  position: absolute; /* Positioning for underline */
+  content: '';
+  position: absolute;
   left: 0;
-  bottom: -5px; /* Position below text */
-  width: 0; /* Start with zero width */
-  height: 2px; /* Underline height */
-  background-color: #007BFF; /* Underline color */
-  transition: width 0.3s ease; /* Smooth width transition */
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #007BFF;
+  transition: width 0.3s ease;
 }
 
 a:hover::after, a.active::after {
-  width: 100%; /* Full width underline on hover or active */
+  width: 100%;
 }
 
 a:hover {
-  color: #007BFF; /* Change text color on hover */
+  color: #007BFF;
 }
 
 
-
-/* app.component.css */
 :host {
   display: block;
-  background-color: #000; /* สีพื้นหลังดำ */
-  color: #fff; /* สีข้อความขาว */
+  color: #fff;
 }

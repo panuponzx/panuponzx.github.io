@@ -1,6 +1,5 @@
 body {
   font-family:  Arial, sans-serif;
-  background-color: #000;
   color: #333;
   margin: 0;
   padding: 0;
@@ -38,8 +37,8 @@ button {
 }
 
 header, main, footer {
-  background-color: #000; /* สีพื้นหลังดำ */
-  color: #fff; /* สีข้อความขาว */
+  background-color: #000;
+  color: #fff;
 }
 
 nav ul {
@@ -54,7 +53,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff; /* สีลิงก์ขาว */
+  color: #fff;
   text-decoration: none;
 }
 
