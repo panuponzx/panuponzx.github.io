@@ -1,6 +1,6 @@
 body {
   font-family:  Arial, sans-serif;
-  color: #333;
+  color: #232227;
   margin: 0;
   padding: 0;
 }
@@ -37,7 +37,7 @@ button {
 }
 
 header, main, footer {
-  background-color: #000;
+  background-color: #232227;
   color: #fff;
 }
 
