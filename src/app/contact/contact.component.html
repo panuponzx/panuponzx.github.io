@@ -1,15 +1,37 @@
 <div class="contact-container">
   <h2>Contact Me</h2>
-  <form (submit)="submitForm()">
-    <label for="name">Name:</label>
-    <input id="name" type="text" [(ngModel)]="contact.name">
 
-    <label for="email">Email:</label>
-    <input id="email" type="email" [(ngModel)]="contact.email">
+  <div class="contact-details">
+    <div class="contact-item" (click)="openLink('facebook')">
+      <h3>Facebook</h3>
+      <a href="javascript:void(0)">facebook.com/your-profile</a>
+    </div>
 
-    <label for="message">Message:</label>
-    <textarea id="message" [(ngModel)]="contact.message"></textarea>
+    <div class="contact-item" (click)="openLink('instagram')">
+      <h3>Instagram</h3>
+      <a href="javascript:void(0)">&#64;your-profile</a> <!-- แก้ไขตรงนี้ -->
+    </div>
 
-    <button type="submit">Send</button>
-  </form>
+    <div class="contact-item" (click)="openLink('email')">
+      <h3>Email</h3>
+      <a href="javascript:void(0)">your-email&#64;example.com</a>
+    </div>
+
+    <div class="contact-item" (click)="openLink('phone')">
+      <h3>Phone</h3>
+      <p>+66 123-456-789</p>
+    </div>
+
+    <div class="contact-item">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799141369!2d-74.25986668737518!3d40.69767006360367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259afdf1e4b7b%3A0x6e437c2a66efb95d!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sth!4v1633402927650!5m2!1sen!2sth"
+        width="400"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
 </div>

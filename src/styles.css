@@ -16,17 +16,6 @@ html {
   padding: 40px;
 }
 
-h1, h2 {
-  margin-bottom: 20px;
-  color: #444;
-}
-
-.project-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 10px;
-  width: 300px;
-}
 
 button {
   background-color: #333;

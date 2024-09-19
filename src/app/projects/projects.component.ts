@@ -1,5 +1,6 @@
 // projects.component.ts
 import { Component, OnInit } from '@angular/core';
+import { url } from 'node:inspector';
 
 interface Project {
   name: string;
@@ -17,14 +18,33 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Project One',
       description: 'Description of Project One.',
-      image: 'assets/project1.jpg'
+      image: 'assets/Kabuto.jpg'
     },
     {
       name: 'Project Two',
       description: 'Description of Project Two.',
-      image: 'assets/project2.jpg'
+      image: 'assets/Sicoe.jpg'
     },
-    // เพิ่มโปรเจ็กต์อื่น ๆ ตามต้องการ
+    {
+      name: 'Project tree',
+      description: 'Description of Project Two.',
+      image: 'assets/Sicoe.jpg'
+    },
+    {
+      name: 'Project tree',
+      description: 'Description of Project Two.',
+      image: 'assets/Sicoe.jpg'
+    },
+    {
+      name: 'Project tree',
+      description: 'Description of Project Two.',
+      image: 'assets/Sicoe.jpg'
+    },
+    {
+      name: 'Project tree',
+      description: 'Description of Project Two.',
+      image: 'assets/Sicoe.jpg'
+    },
   ];
 
   constructor() { }

@@ -23,6 +23,15 @@
   z-index: 1;
 }
 
+  /* {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  text-align: right;
+  color: white;
+} */
+
 .profile-image {
   width: 150px;
   height: 150px;

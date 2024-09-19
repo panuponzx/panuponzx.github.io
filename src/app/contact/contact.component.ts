@@ -6,20 +6,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  contact = {
-    name: '',
-    email: '',
-    message: ''
-  };
 
-  submitForm() {
-    if (this.contact.name && this.contact.email && this.contact.message) {
-      // Handle form submission logic
-      console.log('Form submitted', this.contact);
-      // Optionally, you can send this data to a server or display a success message
-      this.contact = { name: '', email: '', message: '' }; // Reset form after submission
-    } else {
-      console.log('Please fill out all fields.');
+  // Method สำหรับการคัดลอกข้อมูลไปยังคลิปบอร์ด
+  copyToClipboard(text: string) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert(`${text} has been copied to your clipboard!`);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  }
+
+  // Method สำหรับการเปิดลิงก์แพลตฟอร์มต่างๆ
+  openLink(platform: string) {
+    let url = '';
+    switch (platform) {
+      case 'facebook':
+        url = 'https://www.facebook.com/your-profile';
+        break;
+      case 'instagram':
+        url = 'https://www.instagram.com/your-profile';
+        break;
+      case 'email':
+        url = 'mailto:your-email@example.com';
+        break;
+      case 'phone':
+        this.copyToClipboard('+66 123-456-789'); // คัดลอกเบอร์โทรไปยังคลิปบอร์ด
+        return; // ไม่ต้องเปิดลิงก์ใหม่
+      default:
+        break;
     }
+    window.open(url, '_blank');
   }
 }
