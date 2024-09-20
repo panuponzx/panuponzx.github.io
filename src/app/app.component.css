@@ -27,9 +27,78 @@
   }
 }
 
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  position: fixed;
+  width: auto;
+  z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+nav {
+  max-width: 1200px;
+  margin: 0 0auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 20px;
+  position: relative;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007BFF;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #007BFF;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+a:hover::after,
+a.active::after {
+  width: 100%;
+  left: 0;
+}
+
 header, main, footer {
   background-color: #232227;
   color: #fff;
   position: relative;
   z-index: 1;
 }
+
+
+

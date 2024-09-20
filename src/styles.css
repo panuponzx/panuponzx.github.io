@@ -15,19 +15,8 @@ body, html {
   padding: 40px;
 }
 
-header, main, footer {
-  background-color: #232227;
-  color: #fff;
-  z-index: 1;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 footer {
   text-align: center;
   padding: 10px;
 }
+
