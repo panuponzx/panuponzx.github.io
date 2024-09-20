@@ -1,17 +1,22 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio';
-
+  isAnimationComplete = false;
   isScrolled: boolean = false;
+  isVisible = true;
 
   ngOnInit() {
     this.checkScroll();
+    setTimeout(() => {
+      this.isVisible = false;
+      this.isAnimationComplete = true;
+    }, 3000);
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -20,6 +25,6 @@ export class AppComponent {
   }
 
   checkScroll() {
-    this.isScrolled = window.scrollY > 50; // Change this value to adjust the scroll threshold
+    this.isScrolled = window.scrollY > 50;
   }
 }

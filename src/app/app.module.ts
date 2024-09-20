@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { IntroAnimationComponent } from './intro-animation/intro-animation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    IntroAnimationComponent
   ],
   imports: [
     BrowserModule,

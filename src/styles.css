@@ -1,12 +1,11 @@
-body {
-  font-family:  Arial, sans-serif;
+body, html {
+  font-family: Arial, sans-serif;
   color: #232227;
   margin: 0;
   padding: 0;
-}
-
-html {
   scroll-behavior: smooth;
+  height: 100%;
+  background-color: #000;
 }
 
 .home-container, .projects-container, .contact-container {
@@ -16,18 +15,10 @@ html {
   padding: 40px;
 }
 
-
-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
 header, main, footer {
   background-color: #232227;
   color: #fff;
+  z-index: 1;
 }
 
 nav ul {
@@ -36,18 +27,7 @@ nav ul {
   margin: 0;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
 footer {
   text-align: center;
   padding: 10px;
 }
-

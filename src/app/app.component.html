@@ -1,5 +1,9 @@
-<!-- app.component.html -->
+<!-- Intro Animation -->
+<div class="intro-animation" *ngIf="isVisible">
+  <h1>PORTFOLIO WEBSITE</h1>
+</div>
 
+<!-- Main Content: Always visible -->
 <header [ngClass]="{ 'scrolled': isScrolled }">
   <nav>
     <ul>
@@ -9,7 +13,6 @@
     </ul>
   </nav>
 </header>
-
 
 <main>
   <section id="home">
@@ -28,4 +31,3 @@
 <footer>
   <p>&copy; 2024 Your Name. All rights reserved.</p>
 </footer>
-
