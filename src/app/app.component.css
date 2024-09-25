@@ -1,3 +1,14 @@
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+}
+
 .intro-animation {
   display: flex;
   justify-content: center;
@@ -39,12 +50,13 @@ header {
 
 nav {
   max-width: 1200px;
-  margin: 0 0auto;
+  margin: 0 auto;
   margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 
 .logo img {
   height: 50px;
@@ -56,6 +68,8 @@ ul {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 li {

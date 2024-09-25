@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -6,15 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit() {
-    this.fadeInContent();
+    if (isPlatformBrowser(this.platformId)) {
+      this.fadeInContent();
+    }
   }
 
   fadeInContent() {
-    const intro = document.querySelector('.intro');
-    if (intro) {
-      intro.classList.add('fade-in');
+    if (isPlatformBrowser(this.platformId)) {
+      const content = document.querySelector('.content'); 
+      if (content) {
+        content.classList.add('fade-in');
+      }
     }
   }
 }
