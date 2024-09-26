@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
-import { IntroAnimationComponent } from './intro-animation/intro-animation.component';
 import { CommonModule } from '@angular/common';
 import { AboutMeComponent } from './about-me/about-me.component';
 
@@ -16,7 +15,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HomeComponent,
     ProjectsComponent,
     ContactComponent,
-    IntroAnimationComponent,
     AboutMeComponent
   ],
   imports: [

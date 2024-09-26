@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Staatliches&display=swap');
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -25,7 +27,9 @@
 }
 
 .intro-animation h1 {
-  font-size: 3rem;
+  font-family: Staatliches, sans-serif;
+  letter-spacing: 0.07em;
+  font-size: 4rem;
   animation: zoomIn 1.5s ease-in-out forwards;
 }
 
@@ -38,73 +42,33 @@
   }
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  position: fixed;
-  width: auto;
-  z-index: 1000;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-
-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-right: 20px;
+.header {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-}
-
-
-.logo img {
-  height: 50px;
-  margin-right: 20px;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-li {
-  margin: 0 20px;
-  position: relative;
-}
-
-
-a {
-  text-decoration: none;
+  padding: 5px 10px;
   color: #fff;
-  font-size: 18px;
-  padding: 10px;
-  transition: color 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: Staatliches, sans-serif;
+  letter-spacing: 0.07em;
+  gap: 50px;
 }
 
-a:hover {
-  color: #007BFF;
+.header-logo .logo {
+  width: 250px;
 }
 
-a::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: #007BFF;
-  transition: width 0.3s ease, left 0.3s ease;
+.header-status p {
+  margin: 0;
+  font-size: 20px;
 }
 
-a:hover::after,
-a.active::after {
-  width: 100%;
-  left: 0;
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 header, main, footer {
@@ -113,6 +77,5 @@ header, main, footer {
   position: relative;
   z-index: 1;
 }
-
 
 

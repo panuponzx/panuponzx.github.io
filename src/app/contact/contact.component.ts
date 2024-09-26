@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
-  // Method สำหรับการคัดลอกข้อมูลไปยังคลิปบอร์ด
+
   copyToClipboard(text: string) {
     navigator.clipboard.writeText(text).then(() => {
       alert(`${text} has been copied to your clipboard!`);
@@ -16,7 +16,7 @@ export class ContactComponent {
     });
   }
 
-  // Method สำหรับการเปิดลิงก์แพลตฟอร์มต่างๆ
+
   openLink(platform: string) {
     let url = '';
     switch (platform) {
@@ -30,8 +30,8 @@ export class ContactComponent {
         url = 'mailto:your-email@example.com';
         break;
       case 'phone':
-        this.copyToClipboard('+66 123-456-789'); // คัดลอกเบอร์โทรไปยังคลิปบอร์ด
-        return; // ไม่ต้องเปิดลิงก์ใหม่
+        this.copyToClipboard('+66 123-456-789');
+        return; 
       default:
         break;
     }

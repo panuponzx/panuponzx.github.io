@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Staatliches&display=swap');
+
 .home-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  height: 83vh;
   background-image: url('https://img5.pic.in.th/file/secure-sv1/profiles.png');
   background-size: cover;
   text-align: center;
+  background-position: 10vh center;
   color: #fff;
-  padding: 20px 20px;
+  padding: 20px;
   box-sizing: border-box;
+  flex-direction: column;
   position: relative;
-  margin-top: -100px;
+  font-family: Staatliches, sans-serif;
+  letter-spacing: 0.07em;
+  line-height: 1.5;
 }
 .intro {
   position: absolute;
@@ -39,7 +44,7 @@ h1 {
   }
 
 p {
-  font-size: 18px;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 

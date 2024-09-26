@@ -1,21 +1,23 @@
 <!-- Intro Animation -->
-<div class="intro-animation" *ngIf="isVisible">
+<!-- <div class="intro-animation" *ngIf="isVisible">
   <h1>PORTFOLIO WEBSITE</h1>
-</div>
+</div> -->
 
-<!-- Main Content: Always visible -->
-<header [ngClass]="{ 'scrolled': isScrolled }">
-  <!-- <nav>
-    <div class="logo">
-      <h1>PORTFOLIO WEBSITE</h1>
-      <p>PANUPON</p>
-    </div>
+<header [ngClass]="{ 'scrolled': isScrolled }" class="header">
+  <div class="header-logo">
+    <img src="/assets/logo-port.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="header-status">
+    <p>Status: Internship Developer</p>
+  </div>
+
+  <nav class="header-nav">
     <ul>
-      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <li><a routerLink="/about-me">About Me</a></li>
+      <li><a routerLink="/projects">Projects</a></li>
     </ul>
-  </nav> -->
+  </nav>
 </header>
 
 <section>
